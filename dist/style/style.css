@@ -1,0 +1,316 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.show {
+  height: auto !important;
+  padding: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1140px;
+}
+
+.header {
+  background: #343a40;
+  -webkit-box-shadow: 0 0.25rem 0.75rem #55595c;
+          box-shadow: 0 0.25rem 0.75rem #55595c;
+}
+
+.header .collapsible {
+  overflow: hidden;
+  padding: 0;
+  height: 0;
+  -webkit-transition: height 500ms linear;
+  transition: height 500ms linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .collapsible .nav-content {
+  padding: 1rem 0;
+  margin-left: 1rem;
+  max-width: 58%;
+}
+
+.header .collapsible .nav-content:last-child {
+  margin-left: 8%;
+}
+
+.header .collapsible .nav-content:last-child .nav-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .collapsible .nav-content .nav-header {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-bottom: 0.5rem;
+}
+
+.header .collapsible .nav-content .nav-body {
+  color: #6c757d;
+  line-height: 150%;
+}
+
+.header .collapsible .nav-content .nav-body .link {
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+}
+
+.header .nav-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.header .nav-elements i {
+  margin-right: 0.5rem;
+}
+
+.header .nav-elements button {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 0.25rem;
+  color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem 0.75rem;
+}
+
+.header .nav-elements button i {
+  margin: 0;
+  font-size: 1.875rem;
+}
+
+main {
+  padding: 4rem 2rem;
+  margin: auto;
+  max-width: 40rem;
+  text-align: center;
+}
+
+main h2 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  color: #6c757d;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+main div {
+  margin: 1rem auto;
+}
+
+main div button {
+  background: #6c757d;
+  outline: none;
+  border: none;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+main div button:hover {
+  background: #3e4347;
+}
+
+main div button:first-child {
+  background: #007bff;
+  margin-right: 0.5rem;
+}
+
+main div button:first-child:hover {
+  background: #0250a3;
+}
+
+section {
+  width: 100%;
+  background: #f8f9fa;
+  padding-top: 1.5rem;
+}
+
+section .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .card-container .card {
+  width: 30%;
+  min-width: 300px;
+  -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 1rem;
+}
+
+section .card-container .card .media {
+  width: 100%;
+  height: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+section .card-container .card .body {
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #212529;
+  line-height: 1.5;
+}
+
+section .card-container .card .action {
+  padding: 0 1.5rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .card-container .card .action .group-btn {
+  border: 1px solid #4b4e52;
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .card-container .card .action .group-btn button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: #4b4e52;
+  font-size: 14px;
+}
+
+section .card-container .card .action .group-btn button:last-child {
+  border-left: 1px solid #4b4e52;
+}
+
+section .card-container .card .action .group-btn button:hover {
+  background: #4b4e52;
+  color: #fff;
+}
+
+section .card-container .card .action .duration {
+  color: #6c757d;
+  font-size: 80%;
+  font-weight: 400;
+}
+
+footer {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+footer .row .footer-body {
+  color: #6c757d;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 1rem;
+  width: 75%;
+  margin: auto;
+}
+
+footer .row button {
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+footer .benchmark {
+  color: #6c757d;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
